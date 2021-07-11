@@ -1,0 +1,15 @@
+@use 'custom';
+@use 'sections/register';
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.6rem;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

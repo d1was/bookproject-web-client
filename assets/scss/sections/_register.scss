@@ -1,0 +1,80 @@
+.register {
+  margin: 2rem 3rem;
+  width: 80%;
+
+  &__header {
+    text-align: center;
+    h2 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.6rem;
+      margin: 2rem 0;
+    }
+  }
+
+  &__form {
+    margin-bottom: 2rem;
+    .form-group {
+      margin-top: 1.5rem;
+      label {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        padding: 1.3rem 2.2rem 1.3rem 1.2rem;
+        // box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 4%);
+        background-color: #f8f8f8;
+        font-size: 1.4rem;
+      }
+      input:focus {
+        border: 2px solid #000;
+        box-shadow: none;
+      }
+
+      input:focus.is-invalid {
+        border: 2px solid red;
+        box-shadow: none;
+      }
+
+      .invalid-feedback {
+        font-size: 1.1rem;
+      }
+
+      button {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+      }
+      .profile__image {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 2rem auto;
+    width: 40%;
+
+    &__header {
+      h2 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    &__form {
+      .form-group {
+        input {
+          font-size: 1.6rem;
+        }
+        .invalid-feedback {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
